@@ -13,6 +13,12 @@ Vue.use(VueAwesomeSwiper, {})
 
 Vue.config.productionTip = false
 
+router.afterEach(() => {
+  if (document.getElementsByClassName("fp-scroller")[0]) {
+    document.getElementsByClassName("fp-scroller")[0].style.transform = 'translate(0px, 0px) translateZ(0px)'
+  }
+
+})
 new Vue({
   router,
   render: h => h(App)

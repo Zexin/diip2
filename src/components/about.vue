@@ -73,7 +73,8 @@
   margin-right: 20px;
 }
 .btn-footer {
-  position: absolute;
+  position: relative;
+  top: 100px;
   z-index: 9999;
 }
 .btn-footer img {

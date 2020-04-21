@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-main style="position:relative;margin:20px;">
+    <el-main style="position:relative;margin:20px;overflow: hidden;">
       <div class="bgTxt">PRODUCT</div>
       <swiper ref="mySwiper" :options="swiperOptions" style="height:100%; ">
         <swiper-slide class="product-holder">
@@ -33,54 +33,22 @@
 }
 .bgTxt {
   position: absolute;
-  left: 120px;
-  top: 90px;
-  width: 1479px;
-  height: 420px;
-  font-size: 300px;
+  left: 5vw;
+  top: 1vw;
+  font-size: 18vw;
   font-weight: 600;
   color: rgba(155, 155, 155, 0.1);
   line-height: 420px;
 }
-.product-txt h2 {
-  font-size: 24px;
-  font-weight: 400;
-  color: rgba(154, 132, 78, 1);
-  line-height: 33px;
-  margin-bottom: 50px;
-}
 
-.product-txt h1 {
-  font-size: 70px;
-  font-weight: 500;
-  color: rgba(74, 74, 74, 1);
-  line-height: 98px;
-  margin: 0;
-}
-.product-txt h3 {
-  font-size: 30px;
-  font-weight: 400;
-  color: rgba(74, 74, 74, 1);
-  line-height: 45px;
-  margin: 0;
-}
-.product-txt h4 {
-  font-size: 22px;
-  width: 60%;
-  font-weight: 400;
-  color: rgba(155, 155, 155, 1);
-  line-height: 36px;
-  margin-top: 45px;
-}
 .product-holder {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-
+  width: 85% !important;
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
-
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
@@ -92,9 +60,8 @@
   z-index: 5;
   position: relative;
 }
+@import "../common/product.css";
 </style>
-
-
 <script>
 import kitchenL from "./product_contents/kitchenL";
 import stepsInk from "./product_contents/stepsInk";
@@ -113,7 +80,8 @@ export default {
           el: ".swiper-pagination",
           type: "progressbar"
         },
-        loop: true
+        loop: true,
+        slidesPerView: "auto"
         // autoplay: true
 
         // Some Swiper option/callback...

@@ -2,14 +2,14 @@
   <el-container>
     <el-main style="position:relative;height:100%;padding:0">
       <el-row style="height:100%;">
-        <el-col :span="12" class="innovative-holder">
+        <el-col :span="10" class="innovative-holder">
           <swiper ref="mySwiper" style="height:100%; " :options="swiperOptions">
             <swiper-slide v-for="i in imgList" v-bind:key="i.name" class="innovative-holder">
               <img :src="i.img" class="in-img" />
             </swiper-slide>
           </swiper>
         </el-col>
-        <el-col :span="12" class="innovative-holder">
+        <el-col :span="14" class="innovative-holder">
           <div class="in-right-holder flex-middle">
             <div class="in-right-inner">
               <h2>BORN TO BE INNOVATIVE</h2>
@@ -47,7 +47,7 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-
+  overflow: hidden;
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
@@ -58,7 +58,7 @@
   /* background: #000; */
 }
 .in-img {
-  width: 100%;
+  width: 120%;
 }
 
 .swiper-pagination-inno {
@@ -79,9 +79,23 @@
   color: #d9ba6c !important;
   background: black;
 }
+@media screen and (max-width: 1366px) {
+  .swiper-pagination-inno .swiper-pagination-bullet {
+    font-size: 50px;
+    height: 80px;
+    line-height: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .swiper-pagination-inno .swiper-pagination-bullet {
+    font-size: 40px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+}
 </style>
-
-
 <script>
 export default {
   name: "innovativeHolder",

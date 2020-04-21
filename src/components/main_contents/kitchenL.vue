@@ -1,33 +1,53 @@
 <template>
-	<el-container>
-		<el-row :gutter="32" align="middle" class="flex-middle">
-			<el-col :span="10">
-				<div class="main-txt">
-					<h3>KITCHEN.L</h3>
-					<h1>Cook together for your loved ones</h1>
-					<h4>创造美食、社交、商务、活动一体的多元融合空间，对全新消费场景和体验式商业模式的创新实践。</h4>
-				</div>
-			</el-col>
+  <el-container>
+    <el-row>
+      <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24" style="height:100%">
+        <el-row :gutter="32" align="middle" class="flex-middle" style="height:100%">
+          <el-col :span="9">
+            <div class="main-txt">
+              <div class="main_logo_title">KITCHEN.L</div>
+              <div class="main_title">Cook together for your loved ones</div>
+              <div class="main_content">创造美食、社交、商务、活动一体的多元融合空间，对全新消费场景和体验式商业模式的创新实践。</div>
+            </div>
+          </el-col>
+          <el-col :span="15">
+            <img src="../../assets/main_kitchenl.png" class="main-pic" />
+          </el-col>
+        </el-row>
+      </el-col>
+      <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
+        <div>
+          <img src="../../assets/main_kitchenl.png" class="main-pic" />
+        </div>
+        <div>
+          <div class="main-txt">
+            <div class="main_logo_title">KITCHEN.L</div>
+            <div class="main_title">Cook together for your loved ones</div>
+            <div class="main_content">创造美食、社交、商务、活动一体的多元融合空间，对全新消费场景和体验式商业模式的创新实践。</div>
+          </div>
+        </div>
+      </el-col>
+    </el-row>
 
-			<el-col :span="14">
-				<img src="../../assets/main_kitchenl.png" class="main-pic" />
-			</el-col>
-		</el-row>
-	</el-container>
+    <!-- <el-row>
+      <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24"></el-col>
+      <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0"></el-col>
+    </el-row>-->
+  </el-container>
 </template>
 <style>
 </style>
 
 <script>
-	export default {
-		name: "main_kitchenL",
-		props: {},
-		data() {
-			return {};
-		},
-		methods: {},
-		components: {},
-		computed: {},
-		mounted() {}
-	};
+export default {
+  name: "main_kitchenL",
+  props: {},
+  data() {
+    return {};
+  },
+  methods: {},
+  components: {},
+  computed: {},
+  mounted() {}
+};
 </script>

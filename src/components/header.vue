@@ -1,10 +1,25 @@
 <template>
   <div class="header">
-    <img src="../assets/logo.png" class="header-logo" />
-    <a class="menu-btn" href="#product">产品与服务</a>
-    <a class="menu-btn" href="#innovative">创新基因</a>
-    <a class="menu-btn">投资者关系</a>
-    <a class="menu-btn" href="#about">联系我们</a>
+    <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
+      <div class="grid-content bg-purple" style="float:right">
+        <img src="../assets/logo.png" class="header-logo" />
+        <a class="menu-btn" @click="toPage('2')">产品与服务</a>
+        <a class="menu-btn" @click="toPage('3')">创新基因</a>
+        <!-- <a class="menu-btn">投资者关系</a> -->
+        <a class="menu-btn" @click="toPage('4')">联系我们</a>
+      </div>
+    </el-col>
+    <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
+      <div class="grid-content bg-purple">
+        <img src="../assets/logo.png" class="header-logo" />
+        <div>
+          <a class="menu-btn" @click="toPage('3')">产品与服务</a>
+          <a class="menu-btn">创新基因</a>
+          <!-- <a class="menu-btn">投资者关系</a> -->
+          <a class="menu-btn">联系我们</a>
+        </div>
+      </div>
+    </el-col>
   </div>
 </template>
 
@@ -16,9 +31,8 @@ export default {
     return {};
   },
   methods: {
-    toTip(item) {
-      console.log(item);
-      console.log(document.querySelector(".page-" + item).offsetTop);
+    toPage(index) {
+      this.$store.commit("setIndex", index);
     }
   },
   computed: {}
@@ -41,6 +55,7 @@ export default {
   position: absolute;
   left: 0;
   padding: 20px 105px;
+  top: 25px;
 }
 .menu-btn {
   margin: 40px;
@@ -50,5 +65,22 @@ export default {
 }
 .menu-btn:last-of-type {
   margin-right: 105px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 70px !important;
+  }
+  .header-logo {
+    width: 70px;
+    position: absolute;
+    left: 0;
+    padding: 20px 0px;
+  }
+  .menu-btn {
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
 }
 </style>

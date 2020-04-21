@@ -1,0 +1,159 @@
+.main_logo_title {
+    font-size: 30px;
+
+}
+
+.main_title {
+    font-size: 70px;
+    font-weight: bold;
+    width: 150%;
+    margin-top: 10px;
+}
+
+.main_content {
+    font-size: 24px;
+    line-height: 42px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    width: 140px !important;
+    bottom: 0px !important;
+    top: auto !important;
+    background: #424242 !important;
+    height: 4px !important;
+    left: 50px !important;
+}
+
+.active-index {
+    position: absolute;
+    bottom: 15px !important;
+    left: 0px !important;
+    line-height: 14px;
+    z-index: 999;
+    color: rgba(217, 186, 108, 1);
+}
+
+.total-index {
+    position: absolute;
+    bottom: 15px !important;
+    left: 222px !important;
+    line-height: 14px;
+    z-index: 999;
+    color: rgba(217, 186, 108, 1);
+}
+
+.btn-footers {
+    position: absolute;
+    right: 0px !important;
+    bottom: 0px !important;
+    z-index: 9999;
+}
+
+.btn-footers img {
+    width: 14px !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1366px) {
+    .main_logo_title {
+        font-size: 18px;
+
+    }
+
+    .main_title {
+        font-size: 40px;
+        font-weight: bold;
+        width: 150%;
+        margin-top: 5px;
+    }
+
+    .main_content {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main_logo_title {
+        font-size: 14px;
+    }
+
+    .main_title {
+        font-size: 30px;
+        font-weight: bold;
+        width: 150%;
+    }
+
+    .main_content {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainPage {
+        margin: 0 10px 10px 10px !important;
+    }
+
+    .main_logo_title {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .main_title {
+        font-size: 24px;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main_content {
+        font-size: 14px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+
+    .main-pic {
+        width: 100% !important;
+    }
+
+    .el-header-top {
+        height: 70px !important;
+    }
+
+    .el-main {
+        padding: 20px 20px 20px !important;
+    }
+
+    .swiper-pagination {
+        bottom: 0px !important;
+    }
+
+    .swiper-pagination {
+
+        left: 20px !important;
+    }
+
+    .active-index {
+        font-size: 12px;
+        left: 15px !important;
+    }
+
+    .total-index {
+        font-size: 12px;
+        left: 200px !important;
+    }
+
+    .btn-footers {
+        bottom: 7px !important;
+    }
+
+    .btn-footers img {
+        width: 12px !important;
+    }
+}

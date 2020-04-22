@@ -8,7 +8,14 @@
     </div>
     <div class="f-logo-holder">
       <img src="../assets/logo.png" class="header-logo" />
-      <div class="f-icp-holder">上海吉功信息技术有限公司拥有及运营 ©沪ICP备17041464号-5</div>
+      <div class="f-icp-holder">
+        上海吉功信息技术有限公司拥有及运营 ©
+        <a
+          class="footer_a"
+          target="_blank"
+          href="http://www.beian.miit.gov.cn/"
+        >沪ICP备17041464号-5</a>
+      </div>
     </div>
   </div>
 </template>
@@ -58,5 +65,10 @@ export default {
   cursor: pointer;
   color: white;
   text-decoration: none;
+}
+.footer_a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
 }
 </style>

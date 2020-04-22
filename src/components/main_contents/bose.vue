@@ -1,8 +1,8 @@
 <template>
   <el-container>
     <el-row>
-      <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
-        <el-row :gutter="32" align="middle" class="flex-middle">
+      <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24" style="height:100%">
+        <el-row :gutter="32" align="middle" class="flex-middle" style="height:100%">
           <el-col :span="9">
             <div class="main-txt">
               <div class="main_logo_title">BOSE ROADSHOW 2019</div>

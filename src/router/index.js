@@ -7,7 +7,10 @@ Vue.use(VueRouter)
 const routes = [{
     path: '/',
     name: 'HomePage',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'DiiP Group | Digital Impression Industry Partners' // 标题设置
+    }
   },
 
 ]

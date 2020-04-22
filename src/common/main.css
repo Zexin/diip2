@@ -24,7 +24,8 @@
     top: auto !important;
     background: #424242 !important;
     height: 4px !important;
-    left: 50px !important;
+    left: 30px !important;
+    overflow: hidden;
 }
 
 .active-index {
@@ -47,7 +48,7 @@
 
 .btn-footers {
     position: absolute;
-    right: 0px !important;
+    right: 20px !important;
     bottom: 0px !important;
     z-index: 9999;
 }
@@ -55,6 +56,17 @@
 .btn-footers img {
     width: 14px !important;
     cursor: pointer;
+}
+
+.mainPage {
+    position: relative;
+    margin: 0 105px 105px 105px;
+    padding: 0 20px 20px;
+    overflow: hidden !important;
+}
+
+.imgR {
+    margin-left: 90px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -96,7 +108,7 @@
 
 @media screen and (max-width: 768px) {
     .mainPage {
-        margin: 0 10px 10px 10px !important;
+        margin: 60px 0px 10px 0px !important;
     }
 
     .main_logo_title {
@@ -115,6 +127,7 @@
         font-size: 14px;
         line-height: 28px;
         margin-top: 20px;
+        margin-bottom: 0 !important;
     }
 
     .main-pic {
@@ -122,20 +135,17 @@
     }
 
     .el-header-top {
-        height: 70px !important;
+        height: 60px !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 99999999;
     }
 
     .el-main {
-        padding: 20px 20px 20px !important;
-    }
-
-    .swiper-pagination {
-        bottom: 0px !important;
-    }
-
-    .swiper-pagination {
-
-        left: 20px !important;
+        padding: 0px 0px 20px !important;
     }
 
     .active-index {
@@ -154,5 +164,30 @@
 
     .btn-footers img {
         width: 12px !important;
+    }
+
+    .imgR {
+        margin-left: 40px !important;
+    }
+
+    .main-txt {
+        padding: 0 30px;
+        width: auto !important;
+    }
+
+    .btn_main_left {
+        position: absolute;
+        top: 83px;
+        left: 10px;
+        z-index: 9;
+        width: 30px;
+    }
+
+    .btn_main_right {
+        position: absolute;
+        top: 83px;
+        right: 10px;
+        z-index: 9;
+        width: 30px;
     }
 }

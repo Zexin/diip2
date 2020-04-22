@@ -1,6 +1,6 @@
 <template>
   <el-container style="background:black;color:white;">
-    <el-header class="el-header-top" style="height:150px">
+    <el-header class="el-header-top">
       <vHeader></vHeader>
     </el-header>
     <el-main class="mainPage">
@@ -25,33 +25,39 @@
         <swiper-slide class="main-holder">
           <masterKong></masterKong>
         </swiper-slide>
-        <div class="swiper-pagination" slot="pagination"></div>
+        <el-col
+          class="swiper-pagination"
+          slot="pagination"
+          :span="24"
+          :xs="0"
+          :sm="24"
+          :md="24"
+          :lg="24"
+          :xl="24"
+        ></el-col>
       </swiper>
-      <div class="active-index">0{{activeIndex}}</div>
-      <div class="total-index">05</div>
-      <div class="btn-footers">
-        <img src="../assets/btnleft.png" @click="topre" />
-        <img class="imgR" src="../assets/btnright.png" @click="tonext" />
-      </div>
+      <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
+        <img class="btn_main_left" src="../assets/btnleft1.png" @click="topre" />
+        <img class="btn_main_right" src="../assets/btnright1.png" @click="tonext" />
+      </el-col>
+      <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
+        <div class="active-index">0{{activeIndex}}</div>
+        <div class="total-index">05</div>
+        <div class="btn-footers">
+          <img src="../assets/btnleft.png" @click="topre" />
+          <img class="imgR" src="../assets/btnright.png" @click="tonext" />
+        </div>
+      </el-col>
     </el-main>
   </el-container>
 </template>
 <style>
 @import "../common/main.css";
-.mainPage {
-  position: relative;
-  margin: 0 105px 105px 105px;
-  padding: 0;
-  overflow: hidden !important;
-}
 
 .swiper-pagination-progressbar-fill {
   background: #d9ba6c !important;
 }
 
-.imgR {
-  margin-left: 90px;
-}
 .el-header {
   height: 105px;
 }

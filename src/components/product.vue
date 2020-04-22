@@ -1,8 +1,8 @@
 <template>
   <el-container>
-    <el-main style="position:relative;margin:20px;overflow: hidden;">
+    <el-main class="productPage">
       <div class="bgTxt">PRODUCT</div>
-      <swiper ref="mySwiper" :options="swiperOptions" style="height:100%; ">
+      <swiper ref="mySwiper" :options="swiperOptions" class="productPages">
         <swiper-slide class="product-holder">
           <kitchenL></kitchenL>
         </swiper-slide>
@@ -15,11 +15,9 @@
         <swiper-slide class="product-holder">
           <mirrorReality></mirrorReality>
         </swiper-slide>
-
         <swiper-slide class="product-holder">
           <video5></video5>
         </swiper-slide>
-
         <swiper-slide class="product-holder">
           <easyTag></easyTag>
         </swiper-slide>
@@ -41,18 +39,6 @@
   line-height: 420px;
 }
 
-.product-holder {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  width: 85% !important;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
 .product-txt {
   vertical-align: middle;
   text-align: left;
@@ -69,7 +55,6 @@ import linkedScreen from "./product_contents/linkedScreen";
 import mirrorReality from "./product_contents/mirrorReality";
 import video5 from "./product_contents/video5";
 import easyTag from "./product_contents/easyTag";
-
 export default {
   name: "productHolder",
   props: {},
@@ -83,7 +68,6 @@ export default {
         loop: true,
         slidesPerView: "auto"
         // autoplay: true
-
         // Some Swiper option/callback...
       },
       activeIndex: 1

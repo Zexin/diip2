@@ -1,11 +1,11 @@
 <template>
   <el-container style="background:black;color:white;height:100%;">
-    <el-main style="position:relative;margin:20px; ">
+    <el-main class="about_main">
       <div class="about-txt0">
         <p class="label-findus">FIND US</p>
         <h1>联系我们</h1>
       </div>
-      <swiper ref="mySwiper" :options="swiperOptions" style="height:45%; ">
+      <swiper ref="mySwiper" class="about-swiper" :options="swiperOptions">
         <swiper-slide class="about-holder">
           <jigong></jigong>
         </swiper-slide>
@@ -24,10 +24,17 @@
   </el-container>
 </template>
 <style>
+.about_main {
+  position: relative;
+  margin: 20px;
+}
 .swiper-container {
   --swiper-theme-color: #ff6600; /* 设置Swiper风格 */
   --swiper-navigation-color: #00ff33; /* 单独设置按钮颜色 */
   --swiper-navigation-size: 30px; /* 设置按钮大小 */
+}
+.about-swiper {
+  height: 45%;
 }
 .label-findus {
   font-size: 24px;
@@ -83,6 +90,63 @@
 }
 .flex-middle {
   margin-left: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  .about-txt0 {
+    top: 0;
+  }
+  .label-findus {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .about-txt0 h1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 5px;
+  }
+  .about-swiper {
+    height: auto;
+    margin-top: 15px;
+  }
+  .about-txt h4 {
+    font-size: 15px;
+    margin: 0;
+  }
+  .about_p1 {
+    font-size: 12px;
+    line-height: 18px !important;
+    margin: 5px 0 10px;
+  }
+  .about_p2 {
+    font-size: 10px;
+    line-height: 16px !important;
+    margin: 0 !important;
+  }
+  .about-img {
+    width: 10px;
+    margin-right: 10px;
+  }
+  .about-img1 {
+    width: 10px;
+    margin-right: 10px;
+  }
+  .about-img2 {
+    width: 10px;
+    margin-right: 10px;
+  }
+  .btn-footer {
+    position: relative;
+    top: 0px;
+    z-index: 9999;
+  }
+  .btn-footer img {
+    width: 10px !important;
+  }
+  .about_main {
+    padding-bottom: 0 !important;
+  }
 }
 </style>
 

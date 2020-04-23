@@ -1,23 +1,38 @@
 <template>
   <el-container>
     <el-main style="position:relative;height:100%;padding:0">
-      <el-row style="height:100%;">
-        <el-col :span="10" class="innovative-holder">
+      <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24" style="height:100%;">
+        <el-row style="height:100%;">
+          <el-col :span="10" class="innovative-holder">
+            <swiper ref="mySwiper" style="height:100%; " :options="swiperOptions">
+              <swiper-slide v-for="i in imgList" v-bind:key="i.name" class="innovative-holder">
+                <img :src="i.img" class="in-img" />
+              </swiper-slide>
+            </swiper>
+          </el-col>
+          <el-col :span="14" class="innovative-holder">
+            <div class="in-right-holder flex-middle">
+              <div class="in-right-inner">
+                <h2>BORN TO BE INNOVATIVE</h2>
+                <div class="swiper-pagination-inno" slot="pagination"></div>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </el-col>
+      <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
+        <div class="innovative_title">BORN TO BE INNOVATIVE</div>
+        <div class="innovative_banner_img">
           <swiper ref="mySwiper" style="height:100%; " :options="swiperOptions">
             <swiper-slide v-for="i in imgList" v-bind:key="i.name" class="innovative-holder">
-              <img :src="i.img" class="in-img" />
+              <img :src="i.img" class="innovative-img" />
+              <div class="innovative_logo_title">{{i.name}}</div>
             </swiper-slide>
           </swiper>
-        </el-col>
-        <el-col :span="14" class="innovative-holder">
-          <div class="in-right-holder flex-middle">
-            <div class="in-right-inner">
-              <h2>BORN TO BE INNOVATIVE</h2>
-              <div class="swiper-pagination-inno" slot="pagination"></div>
-            </div>
-          </div>
-        </el-col>
-      </el-row>
+          <img class="btn_innovative_left" src="../assets/btnleft1.png" @click="topre" />
+          <img class="btn_innovative_right" src="../assets/btnright1.png" @click="tonext" />
+        </div>
+      </el-col>
     </el-main>
   </el-container>
 </template>
@@ -94,6 +109,40 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .innovative_title {
+    font-size: 16px;
+    color: rgba(154, 132, 78, 1);
+    margin: 20px auto 15px;
+  }
+  .innovative_banner_img {
+    width: 80%;
+    margin: auto;
+  }
+  .innovative-img {
+    width: 100%;
+  }
+  .innovative-holder {
+    display: block;
+  }
+  .innovative_logo_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .btn_innovative_left {
+    position: absolute;
+    top: calc(23.67vw + 44px);
+    left: 10px;
+    z-index: 9;
+    width: 30px;
+  }
+  .btn_innovative_right {
+    position: absolute;
+    top: calc(23.67vw + 44px);
+    right: 10px;
+    z-index: 9;
+    width: 30px;
+  }
 }
 </style>
 <script>
@@ -129,9 +178,20 @@ export default {
       activeIndex: 1
     };
   },
-  methods: {},
+  methods: {
+    topre() {
+      this.swiper.slidePrev();
+    },
+    tonext() {
+      this.swiper.slideNext();
+    }
+  },
   components: {},
-  computed: {},
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper;
+    }
+  },
   mounted() {}
 };
 </script>

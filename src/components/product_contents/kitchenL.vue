@@ -24,7 +24,7 @@
       </el-col>
       <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
         <div class="product_title">SOLUTIONS AND PRODUCTS</div>
-        <div>
+        <div class="product_banner_img">
           <img src="../../assets/product_kitchenl.png" class="product-pic" />
         </div>
         <div>
@@ -63,6 +63,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .product-logo {
+    height: 15px !important;
+  }
 }
 </style>
 

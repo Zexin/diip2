@@ -1,10 +1,16 @@
 <template>
   <div class="footer">
     <div class="f-menu">
-      <a class="footer-menu" href="#product">产品与服务</a>
-      <a class="footer-menu" href="#innovative">创新基因</a>
-      <a class="footer-menu">投资者关系</a>
-      <a class="footer-menu" href="#about">联系我们</a>
+      <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
+        <a class="footer-menu" @click="toPage('2')">产品与服务</a>
+        <a class="footer-menu" @click="toPage('3')">创新基因</a>
+        <a class="footer-menu" @click="toPage('4')">联系我们</a>
+      </el-col>
+      <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
+        <div class="footer-menus" @click="toPages('1')">产品与服务</div>
+        <div class="footer-menus" @click="toPages('2')">创新基因</div>
+        <div class="footer-menus" @click="toPages('3')">联系我们</div>
+      </el-col>
     </div>
     <div class="f-logo-holder">
       <img src="../assets/logo.png" class="header-logo" />
@@ -21,13 +27,29 @@
 </template>
 
 <script>
+import { uuid } from "vue-uuid";
 export default {
   name: "vFooter",
   props: {},
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    toPage(index) {
+      var obj = {
+        index: index,
+        uuid: uuid.v4()
+      };
+      this.$store.commit("setIndex", obj);
+    },
+    toPages(index) {
+      var obj = {
+        index: index,
+        uuid: uuid.v4()
+      };
+      this.$store.commit("setIndexs", obj);
+    }
+  },
   computed: {}
 };
 </script>
@@ -70,5 +92,32 @@ export default {
   text-decoration: none;
   color: white;
   font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .f-menu {
+    height: 35px;
+  }
+  .footer-menus {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 10px;
+    display: inline-block;
+  }
+  .footer {
+    height: auto;
+  }
+  .f-logo-holder {
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .f-logo-holder {
+    margin-top: 15px;
+  }
+  .header-logo {
+    height: 20px;
+    margin-top: 5px;
+  }
 }
 </style>

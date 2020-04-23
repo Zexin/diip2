@@ -24,12 +24,12 @@
       </el-row>
     </el-col>
     <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
-      <div>
-        <img src="../../assets/product_video5.png" class="product-pic" />
+      <div class="product_title">SOLUTIONS AND PRODUCTS</div>
+      <div class="product_banner_img">
+        <img src="../../assets/product_video51.png" class="product-pic" />
       </div>
       <div>
         <div class="product-txt">
-          <div class="product_title">SOLUTIONS AND PRODUCTS</div>
           <div class="product_logo_title">Video5. Pro</div>
           <div class="product_title_cn">
             会议数字化支撑包
@@ -51,6 +51,13 @@
 .product-pic {
   width: 100%;
   /* margin-left: 100px; */
+}
+@media screen and (max-width: 768px) {
+  .product-logo {
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 10px;
+  }
 }
 </style>
 

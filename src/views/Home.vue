@@ -89,6 +89,9 @@ body {
     left: 0;
     top: 0;
   }
+  #page3 {
+    margin-top: 30px;
+  }
 }
 </style>
 <script>
@@ -133,7 +136,7 @@ export default {
       this.$refs.fullpage.api.destroy();
       var PageId = document.querySelector("#page" + key.index);
       document.querySelector("#test").scrollTo({
-        top: PageId.offsetTop,
+        top: PageId.offsetTop - 60,
         behavior: "smooth"
       });
     },

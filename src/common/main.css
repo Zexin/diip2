@@ -177,7 +177,7 @@
 
     .btn_main_left {
         position: absolute;
-        top: 83px;
+        top: calc(28.12vw - 15px);
         left: 10px;
         z-index: 9;
         width: 30px;
@@ -185,7 +185,7 @@
 
     .btn_main_right {
         position: absolute;
-        top: 83px;
+        top: calc(28.12vw - 15px);
         right: 10px;
         z-index: 9;
         width: 30px;

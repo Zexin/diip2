@@ -4,11 +4,11 @@
       <el-col :span="24">
         <div class="about-txt">
           <h4>上海钠盈公关有限公司</h4>
-          <p style="line-height:30px">
+          <p class="about_p1" style="line-height:30px">
             用户触及前站，营销战略，全网执行力，路演，供应链。
             <br />市场影响战略和店面形象规划；科技路演装备，影音舞台设计；全网到达能力，物流和人员运营。
           </p>
-          <p style="line-height:27px;margin-top:20px">
+          <p class="about_p2" style="line-height:27px;margin-top:20px">
             <img class="about-img" src="../../assets/imgAdress.png" />上海市普陀区中山北路3620弄2号楼银城大厦2106室 200062
             <br />Suite 2106, No. 2 Building, Lane 3620, North Zhongshan Road, Shanghai, China, 200062
             <br />
@@ -28,6 +28,12 @@
 .about-logo {
   height: 48px;
   padding-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .about-logo {
+    height: 30px;
+    padding-top: 0px;
+  }
 }
 </style> 
 

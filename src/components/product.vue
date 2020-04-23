@@ -22,30 +22,14 @@
           <easyTag></easyTag>
         </swiper-slide>
       </swiper>
+      <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
+        <img class="btn_product_left" src="../assets/btnleft1.png" @click="topre" />
+        <img class="btn_product_right" src="../assets/btnright1.png" @click="tonext" />
+      </el-col>
     </el-main>
   </el-container>
 </template>
 <style>
-.product-txt {
-  text-align: left;
-}
-.bgTxt {
-  position: absolute;
-  left: 5vw;
-  top: 1vw;
-  font-size: 18vw;
-  font-weight: 600;
-  color: rgba(155, 155, 155, 0.1);
-  line-height: 420px;
-}
-
-.product-txt {
-  vertical-align: middle;
-  text-align: left;
-  width: 100%;
-  z-index: 5;
-  position: relative;
-}
 @import "../common/product.css";
 </style>
 <script>
@@ -73,7 +57,14 @@ export default {
       activeIndex: 1
     };
   },
-  methods: {},
+  methods: {
+    topre() {
+      this.swiper.slidePrev();
+    },
+    tonext() {
+      this.swiper.slideNext();
+    }
+  },
   components: {
     kitchenL,
     stepsInk,
@@ -82,7 +73,11 @@ export default {
     video5,
     easyTag
   },
-  computed: {},
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.$swiper;
+    }
+  },
   mounted() {}
 };
 </script>

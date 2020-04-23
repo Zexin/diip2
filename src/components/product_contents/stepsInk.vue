@@ -22,12 +22,12 @@
       </el-row>
     </el-col>
     <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
-      <div>
-        <img src="../../assets/product_stepink.png" class="product-pic" />
+      <div class="product_title">SOLUTIONS AND PRODUCTS</div>
+      <div class="product_banner_img">
+        <img src="../../assets/product_stepink1.png" class="product-pic" />
       </div>
       <div>
         <div class="product-txt">
-          <div class="product_title">SOLUTIONS AND PRODUCTS</div>
           <div class="product_logo_title">STEPS.INK</div>
           <div class="product_title_cn">
             人工智能驱动的赛事个人影集

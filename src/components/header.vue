@@ -138,12 +138,12 @@ export default {
     top: 20px;
   }
   .menu-btns {
-    margin-top: 9vw;
+    margin-top: 8.5vw;
     cursor: pointer;
     color: white;
     text-decoration: none;
     display: block;
-    font-size: 12px;
+    font-size: 16px;
   }
   .active {
     color: #d9ba6c;

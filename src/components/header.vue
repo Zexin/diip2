@@ -115,6 +115,7 @@ export default {
   left: 0;
   padding: 22px 105px;
   top: 0;
+  z-index: 9;
 }
 .menu-btn {
   margin: 40px;

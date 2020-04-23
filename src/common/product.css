@@ -203,6 +203,7 @@
         height: 80vw;
         margin: auto;
         overflow: hidden;
+        position: relative;
     }
 
     .bgTxt {

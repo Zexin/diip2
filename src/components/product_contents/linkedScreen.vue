@@ -132,13 +132,17 @@ export default {
     return {
       linkVideo: false,
       player: null,
-      showVideo: false
+      showVideo: true
     };
   },
   methods: {},
   components: {},
   computed: {},
   mounted() {
+    var widthL = document.body.clientWidth;
+    if (widthL <= 768) {
+      this.showVideo = false;
+    }
     let options = {
       controls: true, // 是否显示底部控制栏
       preload: "auto", // 加载<video>标签后是否加载视频

@@ -6,7 +6,10 @@
           <el-col :span="9">
             <div class="main-txt">
               <div class="main_logo_title">PEUGEOT AVENUE BEIJING</div>
-              <div class="main_title">Impress customers with novel digital experience</div>
+              <div class="main_title">
+                Impress customers with
+                <br />novel digital experience
+              </div>
               <div class="main_content">打造科技贵族品牌旗舰形象，致力展馆整体运营及数字化体验提升。</div>
             </div>
           </el-col>
@@ -16,13 +19,16 @@
         </el-row>
       </el-col>
       <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
-        <div>
+        <div class="main_banner_img">
           <img src="../../assets/main_peogeot.png" class="main-pic" />
         </div>
         <div>
           <div class="main-txt">
             <div class="main_logo_title">PEUGEOT AVENUE BEIJING</div>
-            <div class="main_title">Impress customers with novel digital experience</div>
+            <div class="main_title">
+              Impress customers with
+              <br />novel digital experience
+            </div>
             <div class="main_content">打造科技贵族品牌旗舰形象，致力展馆整体运营及数字化体验提升。</div>
           </div>
         </div>

@@ -108,7 +108,8 @@
 
 @media screen and (max-width: 768px) {
     .mainPage {
-        margin: 60px 0px 10px 0px !important;
+        margin: 60px 0px 0px 0px !important;
+        height: calc(100vh - 60px);
     }
 
     .main_logo_title {
@@ -124,14 +125,17 @@
     }
 
     .main_content {
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 12px;
+        line-height: 20px;
         margin-top: 20px;
         margin-bottom: 0 !important;
     }
 
     .main-pic {
-        width: 100% !important;
+        width: auto !important;
+        height: 100%;
+        position: absolute;
+        left: calc(50vw + 230.76px - 88.75vh);
     }
 
     .el-header-top {
@@ -145,7 +149,7 @@
     }
 
     .el-main {
-        padding: 0px 0px 20px !important;
+        padding: 0px 0px 0px !important;
     }
 
     .active-index {
@@ -171,23 +175,30 @@
     }
 
     .main-txt {
-        padding: 0 30px;
-        width: auto !important;
+        height: 200px;
+        padding: 0 20px;
+        width: calc(100vw - 40px) !important;
     }
 
     .btn_main_left {
         position: absolute;
-        top: calc(28.12vw - 15px);
-        left: 10px;
+        top: calc(50vh - 140px);
+        left: 5px;
         z-index: 9;
-        width: 30px;
+        width: 20px;
     }
 
     .btn_main_right {
         position: absolute;
-        top: calc(28.12vw - 15px);
-        right: 10px;
+        top: calc(50vh - 140px);
+        right: 5px;
         z-index: 9;
-        width: 30px;
+        width: 20px;
+    }
+
+    .main_banner_img {
+        height: calc(100vh - 260px);
+        overflow: hidden;
+        position: relative;
     }
 }

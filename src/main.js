@@ -7,6 +7,11 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
 import VueWechatTitle from 'vue-wechat-title'
 Vue.use(VueWechatTitle)
+import Video from 'video.js'
+import 'video.js/dist/video-js.css'
+Vue.prototype.$video = Video
+
+
 import 'swiper/css/swiper.css'
 import './plugins/element.js'
 import UUID from 'vue-uuid';

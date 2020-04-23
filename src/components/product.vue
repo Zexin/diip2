@@ -2,6 +2,9 @@
   <el-container>
     <el-main class="productPage">
       <div class="bgTxt">PRODUCT</div>
+      <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
+        <div class="product_title">SOLUTIONS AND PRODUCTS</div>
+      </el-col>
       <swiper ref="mySwiper" :options="swiperOptions" class="productPages">
         <swiper-slide class="product-holder">
           <kitchenL></kitchenL>

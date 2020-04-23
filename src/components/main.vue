@@ -37,8 +37,8 @@
         ></el-col>
       </swiper>
       <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
-        <img class="btn_main_left" src="../assets/btnleft1.png" @click="topre" />
-        <img class="btn_main_right" src="../assets/btnright1.png" @click="tonext" />
+        <img class="btn_main_left" src="../assets/btnleft2.png" @click="topre" />
+        <img class="btn_main_right" src="../assets/btnright2.png" @click="tonext" />
       </el-col>
       <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
         <div class="active-index">0{{activeIndex}}</div>

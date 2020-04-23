@@ -132,16 +132,16 @@
   .btn_innovative_left {
     position: absolute;
     top: calc(23.67vw + 44px);
-    left: 10px;
+    left: 5px;
     z-index: 9;
-    width: 30px;
+    width: 20px;
   }
   .btn_innovative_right {
     position: absolute;
     top: calc(23.67vw + 44px);
-    right: 10px;
+    right: 5px;
     z-index: 9;
-    width: 30px;
+    width: 20px;
   }
 }
 </style>

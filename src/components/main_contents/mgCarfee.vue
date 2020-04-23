@@ -6,7 +6,10 @@
           <el-col :span="9">
             <div class="main-txt">
               <div class="main_logo_title">MG CARFEE</div>
-              <div class="main_title">Keep playing and enjoy carffe</div>
+              <div class="main_title">
+                Keep playing and enjoy
+                <br />carffe
+              </div>
               <div class="main_content">打造年轻人专属的最潮、最好玩的汽车跨界咖啡。</div>
             </div>
           </el-col>
@@ -16,13 +19,16 @@
         </el-row>
       </el-col>
       <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
-        <div>
+        <div class="main_banner_img">
           <img src="../../assets/main_mgcafee.png" class="main-pic" />
         </div>
         <div>
           <div class="main-txt">
             <div class="main_logo_title">MG CARFEE</div>
-            <div class="main_title">Keep playing and enjoy carffe</div>
+            <div class="main_title">
+              Keep playing and enjoy
+              <br />carffe
+            </div>
             <div class="main_content">打造年轻人专属的最潮、最好玩的汽车跨界咖啡。</div>
           </div>
         </div>

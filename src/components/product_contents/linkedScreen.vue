@@ -4,8 +4,9 @@
       <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
         <el-row :gutter="32" align="middle" class="flex-middle">
           <el-col :span="12">
-            <div v-if="showVideo" class="product-txt">
+            <div class="product-txt">
               <video
+                v-if="showVideo"
                 ref="videoPlayer"
                 class="video-js"
                 poster="../../assets/product_linkScreen.png"
@@ -29,8 +30,13 @@
         </el-row>
       </el-col>
       <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
-        <div v-if="!showVideo" class="product_banner_img">
-          <video ref="videoPlayer" class="video-js" poster="../../assets/product_linkScreen.png">
+        <div class="product_banner_img">
+          <video
+            v-if="!showVideo"
+            ref="videoPlayer"
+            class="video-js"
+            poster="../../assets/product_linkScreen.png"
+          >
             <source src="../../assets/jth.mp4" type="video/mp4" />
           </video>
         </div>
@@ -130,7 +136,6 @@ export default {
   props: {},
   data() {
     return {
-      linkVideo: false,
       player: null,
       showVideo: true
     };
@@ -138,14 +143,17 @@ export default {
   methods: {},
   components: {},
   computed: {},
-  mounted() {
+  created() {
     var widthL = document.body.clientWidth;
     if (widthL <= 768) {
       this.showVideo = false;
+      console.log(this.showVideo);
     }
+  },
+  mounted() {
     let options = {
       controls: true, // 是否显示底部控制栏
-      preload: "auto", // 加载<video>标签后是否加载视频
+      preload: "none", // 加载<video>标签后是否加载视频
       // playbackRates: [0.5, 1, 1.5, 2],// 倍速播放
       controlBar: {
         // 自定义按钮的位置
@@ -159,9 +167,7 @@ export default {
     this.player = this.$video(
       this.$refs.videoPlayer,
       options,
-      function onPlayerReady() {
-        console.log("onPlayerReady", this);
-      }
+      function onPlayerReady() {}
     );
   },
   beforeDestroy() {

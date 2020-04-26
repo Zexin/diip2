@@ -14,13 +14,13 @@
             </div>
           </el-col>
           <el-col :span="15">
-            <img src="../../assets/main_bose.png" class="main-pic" />
+            <img src="../../assets/main_bose.jpg" class="main-pic" />
           </el-col>
         </el-row>
       </el-col>
       <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
         <div class="main_banner_img">
-          <img src="../../assets/main_bose.png" class="main-pic" />
+          <img src="../../assets/main_bose.jpg" class="main-pic" />
         </div>
         <div>
           <div class="main-txt">

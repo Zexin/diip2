@@ -4,7 +4,7 @@
       <el-row :gutter="32" align="middle" class="flex-middle">
         <el-col :span="12">
           <div class="product-txt">
-            <img src="../../assets/product_video5.png" class="product-pic" />
+            <img src="../../assets/product_video5.jpg" class="product-pic" />
             <!-- <video class="product-pic"></video> -->
           </div>
         </el-col>

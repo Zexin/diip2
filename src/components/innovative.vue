@@ -153,10 +153,10 @@ export default {
     let that = this;
     return {
       imgList: [
-        { name: "商业模式创新", img: require("./../assets/inno_1.png") },
-        { name: "创意与艺术", img: require("./../assets/inno_2.png") },
+        { name: "商业模式创新", img: require("./../assets/inno_1.jpg") },
+        { name: "创意与艺术", img: require("./../assets/inno_2.jpg") },
         { name: "技术之美", img: require("./../assets/inno_3.png") },
-        { name: "生活方式供应商", img: require("./../assets/inno_4.png") }
+        { name: "生活方式供应商", img: require("./../assets/inno_4.jpg") }
       ],
       swiperOptions: {
         // direction: "vertical",

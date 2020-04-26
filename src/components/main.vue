@@ -52,8 +52,6 @@
   </el-container>
 </template>
 <style>
-@import "../common/main.css";
-
 .swiper-pagination-progressbar-fill {
   background: #d9ba6c !important;
 }
@@ -101,6 +99,7 @@
   justify-content: center; /*x轴对齐方式*/
   align-items: center; /*y轴对滴方式*/
 }
+@import "../common/main.css";
 </style>
 <script>
 import vHeader from "../components/header";

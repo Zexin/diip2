@@ -42,7 +42,7 @@
 
 .product-txt h4 {
     font-size: 22px;
-    width: 60%;
+    width: 80%;
     font-weight: 400;
     color: rgba(155, 155, 155, 1);
     line-height: 36px;
@@ -70,6 +70,15 @@
     font-weight: 600;
     color: rgba(155, 155, 155, 0.1);
     line-height: 420px;
+}
+
+.paroduct_el_col {
+    display: flex;
+    align-items: center;
+}
+
+.flex-middle {
+    width: 100%;
 }
 
 @media screen and (max-width: 1366px) {

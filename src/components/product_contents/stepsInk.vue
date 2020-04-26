@@ -1,13 +1,13 @@
 <template>
   <el-container>
-    <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
+    <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24" class="paroduct_el_col">
       <el-row :gutter="32" align="middle" class="flex-middle">
         <el-col :span="12">
           <div class="product-txt">
             <img src="../../assets/product_stepink.png" class="product-pic" />
           </div>
         </el-col>
-        <el-col :span="8">
+        <el-col :span="10">
           <div class="product-txt">
             <h2>SOLUTIONS AND PRODUCTS</h2>
             <h1>STEPS.INK</h1>
@@ -46,7 +46,7 @@
 }
 .product-pic {
   width: 70%;
-  margin-left: 100px;
+  margin-left: 0px;
 }
 </style>
 

@@ -3,8 +3,13 @@
 
 }
 
+.el-header-top {
+    height: 105px !important;
+
+}
+
 .main_title {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     width: 150%;
     margin-top: 10px;
@@ -60,6 +65,7 @@
 
 .mainPage {
     position: relative;
+    height: 100%;
     margin: 0 105px 105px 105px;
     padding: 0 20px 20px;
     overflow: hidden !important;
@@ -67,6 +73,15 @@
 
 .imgR {
     margin-left: 90px;
+}
+
+@media screen and (max-width: 1457px) {
+    .main_title {
+        font-size: 35px;
+        font-weight: bold;
+        width: 150%;
+        margin-top: 5px;
+    }
 }
 
 @media screen and (max-width: 1366px) {
@@ -132,10 +147,10 @@
     }
 
     .main-pic {
-        width: auto !important;
-        height: 100%;
         position: absolute;
-        left: calc(50vw + 230.76px - 88.75vh);
+        width: 100% !important;
+        top: 0px;
+        left: 0;
     }
 
     .el-header-top {

@@ -20,7 +20,7 @@
       </el-col>
       <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
         <div class="main_banner_img">
-          <img src="../../assets/main_mgcafee.png" class="main-pic" />
+          <img src="../../assets/main_mgcafee1.jpg" class="main-pic" />
         </div>
         <div>
           <div class="main-txt">

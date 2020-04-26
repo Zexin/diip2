@@ -87,6 +87,10 @@
         margin-bottom: 20px;
     }
 
+    .el-col-xs-0 {
+        display: none !important;
+    }
+
     .product-txt h1 {
         font-size: 48px;
         line-height: 78px;

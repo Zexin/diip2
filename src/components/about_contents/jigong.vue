@@ -12,7 +12,7 @@
             <img class="about-img" src="../../assets/imgAdress.png" />上海市徐汇区天钥桥路567号610室
             <br />Suite 610, No. 567, Tian Yao Qiao Road, Shanghai, China, 200030
             <br />
-            <img class="about-img1" src="../../assets/imgEmail.png" />info@kitchen.com
+            <img class="about-img1" src="../../assets/imgEmail.png" />info@linkedscreen.cn
           </p>
           <p>
             <img class="about-logo" src="../../assets/logo-jg.png" />

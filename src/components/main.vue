@@ -8,7 +8,7 @@
         ref="mySwiper"
         :options="swiperOptions"
         @slideChangeTransitionEnd="changeSwiperIndex"
-        style="height:100%; "
+        style="height:100%;"
       >
         <swiper-slide class="main-holder">
           <kitchenL></kitchenL>
@@ -55,7 +55,6 @@
 .swiper-pagination-progressbar-fill {
   background: #d9ba6c !important;
 }
-
 .el-header {
   height: 105px;
 }
@@ -118,8 +117,8 @@ export default {
           el: ".swiper-pagination",
           type: "progressbar"
         },
-        loop: true
-        // autoplay: true
+        loop: true,
+        autoplay: true
 
         // Some Swiper option/callback...
       },
@@ -135,6 +134,10 @@ export default {
       } else {
         this.activeIndex = this.swiper.activeIndex;
       }
+      return (document.getElementsByClassName(
+        "swiper-pagination-progressbar-fill"
+      )[0].style.transform =
+        "translate3d(0px, 0px, 0px) scaleX(0.2) scaleY(1) !important");
     },
     topre() {
       this.swiper.slidePrev();
@@ -156,6 +159,12 @@ export default {
       return this.$refs.mySwiper.$swiper;
     }
   },
-  mounted() {}
+  mounted() {
+    setTimeout(function() {
+      document.getElementsByClassName(
+        "swiper-pagination-progressbar-fill"
+      )[0].style.transform = "translate3d(0px, 0px, 0px) scaleX(0.2) scaleY(1)";
+    }, 500);
+  }
 };
 </script>

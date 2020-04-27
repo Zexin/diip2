@@ -58,7 +58,7 @@
   position: relative;
 }
 .about-txt0 h1 {
-  font-size: 70px;
+  font-size: 50px;
   margin-top: 20px;
 }
 .about-txt h3 {

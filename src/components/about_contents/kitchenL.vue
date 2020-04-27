@@ -12,7 +12,7 @@
             <img class="about-img" src="../../assets/imgAdress.png" />上海市徐汇区凯旋路2086号107室
             <br />Suite 107, No. 2086, Kai Xuan Road, Shanghai, China, 200030
             <br />
-            <img class="about-img1" src="../../assets/imgEmail.png" />info@kitchen.com
+            <img class="about-img1" src="../../assets/imgEmail.png" />info@kitchenl.com
           </p>
           <p>
             <img class="about-logo" src="../../assets/logo_kitchenl.png" />

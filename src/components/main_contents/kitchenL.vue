@@ -14,7 +14,7 @@
             </div>
           </el-col>
           <el-col :span="15">
-            <img src="../../assets/main_kitchenl.jpg" class="main-pic" />
+            <img src="../../assets/main_kitchenl.png" class="main-pic" />
           </el-col>
         </el-row>
       </el-col>

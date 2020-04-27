@@ -26,7 +26,7 @@
 </template>
 <style  scoped>
 .about-logo {
-  height: 48px;
+  height: 60px;
   padding-top: 40px;
 }
 @media screen and (max-width: 768px) {

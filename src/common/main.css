@@ -31,7 +31,7 @@
     top: auto !important;
     background: #424242 !important;
     height: 4px !important;
-    left: 30px !important;
+    left: 16px !important;
     overflow: hidden;
 }
 
@@ -47,7 +47,7 @@
 .total-index {
     position: absolute;
     bottom: 15px !important;
-    left: 222px !important;
+    left: 200px !important;
     line-height: 14px;
     z-index: 999;
     color: rgba(217, 186, 108, 1);

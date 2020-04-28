@@ -54,7 +54,7 @@
 </template>
 <style  scoped>
 .product-logo {
-  height: 70px;
+  height: 50px;
   position: absolute;
   bottom: 0px;
 }

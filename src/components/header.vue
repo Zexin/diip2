@@ -113,7 +113,7 @@ export default {
   width: 120px;
   position: absolute;
   left: 0;
-  padding: 22px 105px;
+  padding: 22px 141px;
   top: 0;
   z-index: 9;
 }
@@ -124,7 +124,7 @@ export default {
   text-decoration: none;
 }
 .menu-btn:last-of-type {
-  margin-right: 105px;
+  margin-right: 141px;
 }
 @media screen and (max-width: 768px) {
   .header {

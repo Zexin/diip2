@@ -173,7 +173,10 @@ export default {
             );
           }
         },
-        loop: true
+        loop: true,
+        autoplay: {
+          disableOnInteraction: false
+        }
       },
       activeIndex: 1
     };

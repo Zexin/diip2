@@ -31,14 +31,14 @@
     top: auto !important;
     background: #424242 !important;
     height: 4px !important;
-    left: 16px !important;
+    left: 52px !important;
     overflow: hidden;
 }
 
 .active-index {
     position: absolute;
     bottom: 15px !important;
-    left: 0px !important;
+    left: 36px !important;
     line-height: 14px;
     z-index: 999;
     color: rgba(217, 186, 108, 1);
@@ -47,7 +47,7 @@
 .total-index {
     position: absolute;
     bottom: 15px !important;
-    left: 200px !important;
+    left: 233px !important;
     line-height: 14px;
     z-index: 999;
     color: rgba(255, 255, 255, 0.3);
@@ -55,7 +55,7 @@
 
 .btn-footers {
     position: absolute;
-    right: 20px !important;
+    right: 36px !important;
     bottom: 0px !important;
     z-index: 9999;
 }

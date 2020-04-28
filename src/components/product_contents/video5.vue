@@ -11,7 +11,6 @@
 
         <el-col :span="10">
           <div class="product-txt">
-            <h2>SOLUTIONS AND PRODUCTS</h2>
             <h1>Video5. Pro</h1>
             <h3>
               会议数字化支撑包
@@ -44,7 +43,8 @@
 <style  scoped>
 .product-logo {
   height: 70px;
-  margin-top: 140px;
+  position: absolute;
+  bottom: 0px;
   font-size: 36px;
 }
 .product-pic {

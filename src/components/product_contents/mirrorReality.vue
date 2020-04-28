@@ -10,7 +10,6 @@
         </el-col>
         <el-col :span="10">
           <div class="product-txt">
-            <h2>SOLUTIONS AND PRODUCTS</h2>
             <h1>Mirror Reality</h1>
             <h3>
               服饰AR强化视觉
@@ -43,7 +42,8 @@
 <style  scoped>
 .product-logo {
   height: 70px;
-  margin-top: 140px;
+  position: absolute;
+  bottom: 0px;
 }
 .product-pic {
   width: 50%;

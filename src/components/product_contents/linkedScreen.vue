@@ -16,7 +16,6 @@
         </el-col>
         <el-col :span="10">
           <div class="product-txt">
-            <h2>SOLUTIONS AND PRODUCTS</h2>
             <h1>Linked Screen</h1>
             <h3>
               多屏千人互动引擎
@@ -56,7 +55,8 @@
 <style  scoped>
 .product-logo {
   height: 70px;
-  margin-top: 140px;
+  position: absolute;
+  bottom: 0px;
 }
 @media screen and (max-width: 768px) {
   .product-logo {
@@ -67,7 +67,7 @@
 <style>
 .video-js {
   position: absolute;
-  top: 0;
+  top: 3vw;
   width: 70%;
   margin-left: 0px;
   height: calc(23.94vw - 37.2px);

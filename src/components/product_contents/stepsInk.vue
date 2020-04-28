@@ -9,7 +9,6 @@
         </el-col>
         <el-col :span="10">
           <div class="product-txt">
-            <h2>SOLUTIONS AND PRODUCTS</h2>
             <h1>STEPS.INK</h1>
             <h3>
               人工智能驱动的赛事个人影集
@@ -42,7 +41,8 @@
 <style  scoped>
 .product-logo {
   height: 70px;
-  margin-top: 140px;
+  position: absolute;
+  bottom: 0px;
 }
 .product-pic {
   width: 70%;

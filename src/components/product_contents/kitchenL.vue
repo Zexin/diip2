@@ -9,7 +9,6 @@
         </el-col>
         <el-col :span="10">
           <div class="product-txt">
-            <h2>SOLUTIONS AND PRODUCTS</h2>
             <h1>KITCHEN.L</h1>
             <h3>
               创新生活方式体验空间
@@ -42,22 +41,14 @@
 <style  scoped>
 .product-logo {
   height: 30px;
-  margin-top: 120px;
+  position: absolute;
+  bottom: 0px;
 }
 .product-pic {
   width: 80%;
   margin-left: 0px;
 }
-@media screen and (max-width: 1366px) {
-  .product-logo {
-    margin-top: 80px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .product-logo {
-    margin-top: 60px;
-  }
-}
+
 
 @media screen and (max-width: 768px) {
   .product-logo {

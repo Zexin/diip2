@@ -5,6 +5,25 @@
       <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
         <div class="product_title">SOLUTIONS AND PRODUCTS</div>
       </el-col>
+      <el-col
+        class="product-tpo-title"
+        :span="24"
+        :xs="0"
+        :sm="24"
+        :md="24"
+        :lg="24"
+        :xl="24"
+        style="position:absolute;left:4px;width:85%"
+      >
+        <el-row :gutter="32" align="middle" class="flex-middle">
+          <el-col :span="12"></el-col>
+          <el-col :span="10">
+            <div
+              style="text-align:left;color:rgba(154, 132, 78, 1);font-size:20px"
+            >SOLUTIONS AND PRODUCTS</div>
+          </el-col>
+        </el-row>
+      </el-col>
       <swiper ref="mySwiper" :options="swiperOptions" class="productPages">
         <swiper-slide class="product-holder">
           <kitchenL></kitchenL>

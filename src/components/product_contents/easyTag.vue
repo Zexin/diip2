@@ -9,7 +9,6 @@
         </el-col>
         <el-col :span="10">
           <div class="product-txt">
-            <h2>SOLUTIONS AND PRODUCTS</h2>
             <h1>easyTag</h1>
             <h3>
               数据驱动的位置感知
@@ -42,25 +41,20 @@
 <style  scoped>
 .product-logo {
   height: 70px;
-  margin-top: 140px;
+  position: absolute;
+  bottom: 0px;
 }
 .product-pic {
   width: 100%;
   /* margin-left: 100px; */
 }
-@media screen and (max-width: 1366px) {
-  .product-logo {
-    margin-top: 80px;
-  }
-}
+
 @media screen and (max-width: 992px) {
   .product-logo {
     margin-top: 60px;
   }
 }
 
-@media screen and (max-width: 768px) {
-}
 </style>
 
 <script>

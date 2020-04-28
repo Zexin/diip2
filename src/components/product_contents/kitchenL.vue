@@ -14,7 +14,7 @@
               创新生活方式体验空间
               <br />美食主题潮拍和团建活动地标
             </h3>
-            <h4>创新美食生活方式品牌，打造线上内容IP加线下体验空间的商业矩阵，从品牌营销战略到创新跨界品牌形象执行与社会化传播</h4>
+            <h4>创新美食生活方式品牌，打造线上内容IP加线下体验空间的商业矩阵，从品牌营销战略到创新跨界品牌形象执行与社会化传播。</h4>
             <img src="../../assets/logo_kitchenl.png" class="product-logo" />
           </div>
         </el-col>
@@ -31,7 +31,7 @@
             创新生活方式体验空间
             <br />美食主题潮拍和团建活动地标
           </div>
-          <div class="product_content">创新美食生活方式品牌，打造线上内容IP加线下体验空间的商业矩阵，从品牌营销战略到创新跨界品牌形象执行与社会化传播</div>
+          <div class="product_content">创新美食生活方式品牌，打造线上内容IP加线下体验空间的商业矩阵，从品牌营销战略到创新跨界品牌形象执行与社会化传播。</div>
           <img src="../../assets/logo_kitchenl.png" class="product-logo" />
         </div>
       </div>
@@ -48,7 +48,6 @@
   width: 80%;
   margin-left: 0px;
 }
-
 
 @media screen and (max-width: 768px) {
   .product-logo {

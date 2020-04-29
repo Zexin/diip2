@@ -29,8 +29,8 @@
               <div class="innovative_logo_title">{{i.name}}</div>
             </swiper-slide>
           </swiper>
-          <img class="btn_innovative_left" src="../assets/btnleft1.png" @click="topre" />
-          <img class="btn_innovative_right" src="../assets/btnright1.png" @click="tonext" />
+          <img class="btn_innovative_left" src="../assets/btnleft2.png" @click="topre" />
+          <img class="btn_innovative_right" src="../assets/btnright2.png" @click="tonext" />
         </div>
       </el-col>
     </el-main>
@@ -112,7 +112,7 @@
   .innovative_title {
     font-size: 16px;
     color: rgba(154, 132, 78, 1);
-    margin: 20px auto 15px;
+    margin: 60px auto;
   }
   .innovative_banner_img {
     width: 80%;
@@ -125,23 +125,23 @@
     display: block;
   }
   .innovative_logo_title {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 55px;
   }
   .btn_innovative_left {
     position: absolute;
-    top: calc(23.67vw + 44px);
-    left: 5px;
+    top: calc(23.67vw + 120px);
+    left: 10px;
     z-index: 9;
-    width: 25px;
+    width: 40px;
   }
   .btn_innovative_right {
     position: absolute;
-    top: calc(23.67vw + 44px);
-    right: 5px;
+    top: calc(23.67vw + 120px);
+    right: 10px;
     z-index: 9;
-    width: 25px;
+    width: 40px;
   }
 }
 </style>

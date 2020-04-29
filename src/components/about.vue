@@ -95,7 +95,8 @@
 }
 @media screen and (max-width: 768px) {
   .about-txt0 {
-    top: 0;
+    top: 40px;
+    margin-bottom: 80px;
   }
   .label-findus {
     margin: 0;
@@ -110,6 +111,7 @@
   }
   .about-swiper {
     height: auto;
+    min-height: auto;
     margin-top: 15px;
   }
   .about-txt h4 {

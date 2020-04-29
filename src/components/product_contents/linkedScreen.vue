@@ -111,7 +111,7 @@
     bottom: 0;
     width: 100%;
     margin-left: 0px;
-    height: 60vw;
+    height: 80vw;
     left: 0;
     top: auto;
   }

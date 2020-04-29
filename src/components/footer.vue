@@ -15,12 +15,9 @@
     <div class="f-logo-holder">
       <img src="../assets/logo.png" class="header-logo" />
       <div class="f-icp-holder">
-        上海吉功信息技术有限公司拥有及运营 ©
-        <a
-          class="footer_a"
-          target="_blank"
-          href="http://www.beian.miit.gov.cn/"
-        >沪ICP备17041464号-5</a>
+        上海吉功信息技术有限公司拥有及运营
+        <br />
+        <a class="footer_a" target="_blank" href="http://www.beian.miit.gov.cn/">©沪ICP备17041464号-5</a>
       </div>
     </div>
   </div>
@@ -56,6 +53,7 @@ export default {
 <style scoped>
 .f-icp-holder {
   font-size: 12px;
+  font-weight: 300;
 }
 .header-logo {
   max-height: 60px;
@@ -95,14 +93,14 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .f-menu {
-    height: 35px;
+    height: 50px;
   }
   .footer-menus {
     cursor: pointer;
     color: white;
     text-decoration: none;
     font-size: 12px;
-    margin: 10px;
+    margin: 20px;
     display: inline-block;
   }
   .footer {
@@ -116,8 +114,9 @@ export default {
     margin-top: 15px;
   }
   .header-logo {
-    height: 20px;
-    margin-top: 5px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 </style>

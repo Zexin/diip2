@@ -121,21 +121,21 @@
     }
 
     .main_logo_title {
-        font-size: 18px;
-        margin-top: 10px;
+        font-size: 14px;
+        margin-top: 20px;
     }
 
     .main_title {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: bold;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .main_content {
         font-size: 12px;
         line-height: 20px;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 0 !important;
     }
 
@@ -183,7 +183,7 @@
     }
 
     .main-txt {
-        height: 200px;
+        height: 180px;
         padding: 0 20px;
         width: calc(100vw - 40px) !important;
     }
@@ -191,21 +191,21 @@
     .btn_main_left {
         position: absolute;
         top: calc(50vh - 140px);
-        left: 5px;
+        left: 10px;
         z-index: 9;
-        width: 25px;
+        width: 40px;
     }
 
     .btn_main_right {
         position: absolute;
         top: calc(50vh - 140px);
-        right: 5px;
+        right: 10px;
         z-index: 9;
-        width: 25px;
+        width: 40px;
     }
 
     .main_banner_img {
-        height: calc(100vh - 260px);
+        height: calc(100vh - 240px);
         overflow: hidden;
         position: relative;
     }

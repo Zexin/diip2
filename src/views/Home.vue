@@ -65,6 +65,7 @@ body {
   }
   .home {
     height: 100%;
+    letter-spacing: -0.5px;
   }
   .home_div {
     height: 100%;
@@ -90,7 +91,7 @@ body {
     top: 0;
   }
   #page3 {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 </style>

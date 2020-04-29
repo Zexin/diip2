@@ -11,7 +11,7 @@
     </el-col>
     <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
       <div class="grid-content bg-purple">
-        <img src="../assets/logo.png" class="header-logo" />
+        <img src="../assets/logo1.png" class="header-logo" />
         <div class="tipPage">
           <div v-show="!showTip">
             <img src="../assets/showTip.png" @touchend.stop="showTips" class="btn_show_tip" />
@@ -131,11 +131,11 @@ export default {
     height: 60px !important;
   }
   .header-logo {
-    width: 40px;
+    width: 50px;
     position: absolute;
-    left: calc(50% - 20px);
+    left: calc(50% - 25px);
     padding: 0px;
-    top: 20px;
+    top: 13.5px;
   }
   .menu-btns {
     margin-top: 8.5vw;
@@ -157,8 +157,8 @@ export default {
   .btn_show_tip {
     position: absolute;
     left: 30px;
-    top: 21px;
-    width: 20px;
+    top: 22px;
+    width: 18px;
   }
   .showTipPage {
     position: absolute;

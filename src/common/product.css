@@ -182,7 +182,7 @@
 
     .product-logo {
         position: absolute;
-        top: -10px;
+        top: 6px;
         right: 0;
         height: 30px !important;
         margin-top: 0px !important;
@@ -197,13 +197,13 @@
     .product_title {
         font-size: 16px;
         color: rgba(154, 132, 78, 1);
-        margin: 55px auto 15px;
+        margin: 60px auto;
     }
 
     .product_logo_title {
         font-size: 24px;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .product_title_cn {
@@ -219,18 +219,18 @@
 
     .btn_product_left {
         position: absolute;
-        top: calc(40vw + 79px);
-        left: 5px;
+        top: calc(40vw + 109px);
+        left: 10px;
         z-index: 9;
-        width: 25px;
+        width: 40px;
     }
 
     .btn_product_right {
         position: absolute;
-        top: calc(40vw + 79px);
-        right: 5px;
+        top: calc(40vw + 109px);
+        right: 10px;
         z-index: 9;
-        width: 25px;
+        width: 40px;
     }
 
     .product_banner_img {
@@ -242,11 +242,7 @@
     }
 
     .bgTxt {
-        left: 10vw;
-        top: 82px;
-        font-size: 17vw;
-        font-weight: 600;
-        line-height: 17vw;
+        display: none;
     }
 
     .product-txt {

@@ -24,7 +24,7 @@
     </el-col>
     <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
       <div class="product_banner_img">
-        <img src="../../assets/product_video51.png" class="product-pic" />
+        <img src="../../assets/product_video51.jpg" class="product-pic" />
       </div>
       <div>
         <div class="product-txt">

@@ -9,7 +9,7 @@ const routes = [{
     name: 'HomePage',
     component: Home,
     meta: {
-      title: 'DiiP Group | Digital Impression Industry Partners' // 标题设置
+      // title: 'DiiP Group | Digital Impression Industry Partners' // 标题设置
     }
   },
 

@@ -134,14 +134,14 @@
     top: calc(23.67vw + 44px);
     left: 5px;
     z-index: 9;
-    width: 20px;
+    width: 25px;
   }
   .btn_innovative_right {
     position: absolute;
     top: calc(23.67vw + 44px);
     right: 5px;
     z-index: 9;
-    width: 20px;
+    width: 25px;
   }
 }
 </style>

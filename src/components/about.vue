@@ -35,12 +35,14 @@
 }
 .about-swiper {
   height: 45%;
+  min-height: 350px;
 }
 .label-findus {
   font-size: 24px;
   font-weight: 500;
   color: rgba(154, 132, 78, 1);
   line-height: 36px;
+  margin-top: 0;
 }
 .about-txt0 {
   vertical-align: middle;
@@ -48,7 +50,7 @@
   width: 100%;
   z-index: 5;
   position: relative;
-  top: 40px;
+  top: 1vh;
 }
 .about-txt {
   vertical-align: middle;

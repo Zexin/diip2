@@ -18,7 +18,7 @@
     width: 100%;
     z-index: 5;
     position: relative;
-    height: 600px;
+    height: 540px;
 }
 
 .product_title {
@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 1366px) {
     .product-txt {
-        height: 500px;
+        height: 480px;
     }
 
     .product-tpo-title {
@@ -222,7 +222,7 @@
         top: calc(40vw + 79px);
         left: 5px;
         z-index: 9;
-        width: 20px;
+        width: 25px;
     }
 
     .btn_product_right {
@@ -230,7 +230,7 @@
         top: calc(40vw + 79px);
         right: 5px;
         z-index: 9;
-        width: 20px;
+        width: 25px;
     }
 
     .product_banner_img {

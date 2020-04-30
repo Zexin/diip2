@@ -11,7 +11,10 @@
         style="height:100%;"
       >
         <swiper-slide class="main-holder">
-          <kitchenL></kitchenL>
+          <boses></boses>
+        </swiper-slide>
+        <swiper-slide class="main-holder">
+          <masterKong></masterKong>
         </swiper-slide>
         <swiper-slide class="main-holder">
           <peogeot></peogeot>
@@ -20,10 +23,10 @@
           <bose></bose>
         </swiper-slide>
         <swiper-slide class="main-holder">
-          <mgCarfee></mgCarfee>
+          <kitchenL></kitchenL>
         </swiper-slide>
         <swiper-slide class="main-holder">
-          <masterKong></masterKong>
+          <mgCarfee></mgCarfee>
         </swiper-slide>
         <el-col
           class="swiper-pagination"
@@ -42,7 +45,7 @@
       </el-col>
       <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
         <div class="active-index">0{{activeIndex}}</div>
-        <div class="total-index">05</div>
+        <div class="total-index">06</div>
         <div class="btn-footers">
           <img src="../assets/btnleft3.png" @click="topre" />
           <img class="imgR" src="../assets/btnright3.png" @click="tonext" />
@@ -105,6 +108,7 @@ import vHeader from "../components/header";
 import kitchenL from "./main_contents/kitchenL";
 import peogeot from "./main_contents/peugeot";
 import bose from "./main_contents/bose";
+import boses from "./main_contents/boses";
 import mgCarfee from "./main_contents/mgCarfee";
 import masterKong from "./main_contents/masterKong";
 export default {
@@ -128,8 +132,8 @@ export default {
   methods: {
     changeSwiperIndex() {
       if (this.swiper.activeIndex == 0) {
-        this.activeIndex = 5;
-      } else if (this.swiper.activeIndex == 6) {
+        this.activeIndex = 6;
+      } else if (this.swiper.activeIndex == 7) {
         this.activeIndex = 1;
       } else {
         this.activeIndex = this.swiper.activeIndex;
@@ -151,6 +155,7 @@ export default {
     kitchenL,
     peogeot,
     bose,
+    boses,
     mgCarfee,
     masterKong
   },

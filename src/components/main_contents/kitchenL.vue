@@ -22,9 +22,8 @@
         <div class="main_banner_img">
           <img src="../../assets/main_kitchenl1.jpg" class="main-pic" />
         </div>
-        <div style="overflow: hidden;">
-          <transition name="slide-fade">
-            <div class="main-txt" v-if="showKitPage">
+        <div>
+          <div class="main-txt">
               <div class="main_logo_title">KITCHEN.L</div>
               <div class="main_title">
                 Cook together
@@ -32,7 +31,6 @@
               </div>
               <div class="main_content">创造美食、社交、商务、活动一体的多元融合空间，对全新消费场景和体验式商业模式的创新实践。</div>
             </div>
-          </transition>
         </div>
       </el-col>
     </el-row>
@@ -62,22 +60,11 @@ export default {
   name: "main_kitchenL",
   props: {},
   data() {
-    return {
-      showKitPage: false
-    };
+    return {};
   },
-  methods: {
-    init: function() {
-      setTimeout(function() {
-        console.log("ok");
-        this.showKitPage = true;
-      }, 500);
-    }
-  },
+  methods: {},
   components: {},
   computed: {},
-  mounted() {
-    this.showKitPage = true;
-  }
+  mounted() {}
 };
 </script>

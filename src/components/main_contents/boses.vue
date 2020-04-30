@@ -10,7 +10,7 @@
                 Create an immersive
                 <br />SOUND flight journey
               </div>
-              <div class="main_content">理性与感性结合的数字设计，一场身临其境的想象力·头等舱体验旅行。</div>
+              <div class="main_content">理性与感性结合的数字设计，一场身临其境的想象力 • 头等舱体验旅行。</div>
             </div>
           </el-col>
           <el-col :span="15">
@@ -30,7 +30,7 @@
                 Create an immersive
                 <br />SOUND flight journey
               </div>
-              <div class="main_content">理性与感性结合的数字设计，一场身临其境的想象力·头等舱体验旅行。</div>
+              <div class="main_content">理性与感性结合的数字设计，一场身临其境的想象力 • 头等舱体验旅行。</div>
             </div>
           </transition>
         </div>

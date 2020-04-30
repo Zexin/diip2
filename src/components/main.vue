@@ -44,8 +44,8 @@
         <div class="active-index">0{{activeIndex}}</div>
         <div class="total-index">05</div>
         <div class="btn-footers">
-          <img src="../assets/btnleft.png" @click="topre" />
-          <img class="imgR" src="../assets/btnright.png" @click="tonext" />
+          <img src="../assets/btnleft3.png" @click="topre" />
+          <img class="imgR" src="../assets/btnright3.png" @click="tonext" />
         </div>
       </el-col>
     </el-main>

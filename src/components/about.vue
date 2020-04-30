@@ -17,8 +17,8 @@
         </swiper-slide>
       </swiper>
       <div class="btn-footer">
-        <img src="../assets/btnleft.png" @click="topre" />
-        <img class="imgR" src="../assets/btnright.png" @click="tonext" />
+        <img src="../assets/btnleft3.png" @click="topre" />
+        <img class="imgR" src="../assets/btnright3.png" @click="tonext" />
       </div>
     </el-main>
   </el-container>

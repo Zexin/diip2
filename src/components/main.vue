@@ -118,9 +118,7 @@ export default {
           type: "progressbar"
         },
         loop: true,
-        autoplay: {
-          disableOnInteraction: false
-        }
+        autoplay: true
 
         // Some Swiper option/callback...
       },

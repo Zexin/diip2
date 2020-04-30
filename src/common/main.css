@@ -13,7 +13,6 @@
     font-weight: bold;
     width: 250%;
     margin-top: 10px;
-    word-break: keep-all;
 
 }
 
@@ -128,6 +127,7 @@
     .main_title {
         font-size: 26px;
         font-weight: bold;
+        line-height: 36px;
         width: 100%;
         margin-top: 0px;
     }
@@ -188,6 +188,10 @@
         width: calc(100vw - 40px) !important;
     }
 
+    .main-txt-kitchenl {
+        left: 100vw;
+    }
+
     .btn_main_left {
         position: absolute;
         top: calc(50vh - 140px);
@@ -208,5 +212,9 @@
         height: calc(100vh - 240px);
         overflow: hidden;
         position: relative;
+    }
+
+    .el-container {
+        height: 100%;
     }
 }

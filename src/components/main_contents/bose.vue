@@ -5,7 +5,7 @@
         <el-row :gutter="32" align="middle" class="flex-middle" style="height:100%">
           <el-col :span="9">
             <div class="main-txt">
-              <div class="main_logo_title">BOSE ROADSHOW 2019</div>
+              <div class="main_logo_title">BOSE ROADSHOW 2018</div>
               <div class="main_title">
                 Empower brand with
                 <br />intelligence and innovation
@@ -24,7 +24,7 @@
         </div>
         <div>
           <div class="main-txt">
-            <div class="main_logo_title">BOSE ROADSHOW 2019</div>
+            <div class="main_logo_title">BOSE ROADSHOW 2018</div>
             <div class="main_title">
               Empower brand with
               <br />intelligence and innovation

@@ -174,9 +174,7 @@ export default {
           }
         },
         loop: true,
-        autoplay: {
-          disableOnInteraction: false
-        }
+        autoplay: true
       },
       activeIndex: 1
     };

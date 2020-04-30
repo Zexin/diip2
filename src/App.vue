@@ -8,7 +8,6 @@
 body {
   margin: 0;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  -webkit-font-smoothing: none;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

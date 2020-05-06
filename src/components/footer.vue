@@ -14,10 +14,20 @@
     </div>
     <div class="f-logo-holder">
       <img src="../assets/logo.png" class="header-logo" />
-      <div class="f-icp-holder">
-        上海吉功信息技术有限公司拥有及运营
-        <br />
-        <a class="footer_a" target="_blank" href="http://www.beian.miit.gov.cn/">©沪ICP备17041464号-5</a>
+      <div class="f-icp-holder" style="display:flex">
+        <el-col :span="24" :xs="24" :sm="0" :md="0" :lg="0" :xl="0">
+          上海吉功信息技术有限公司拥有及运营
+          <br />
+          <a class="footer_a" target="_blank" href="http://www.beian.miit.gov.cn/">©沪ICP备17041464号-5</a>
+        </el-col>
+        <el-col :span="24" :xs="0" :sm="24" :md="24" :lg="24" :xl="24">
+          上海吉功信息技术有限公司拥有及运营
+          <a
+            class="footer_a"
+            target="_blank"
+            href="http://www.beian.miit.gov.cn/"
+          >©沪ICP备17041464号-5</a>
+        </el-col>
       </div>
     </div>
   </div>
